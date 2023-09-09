@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Percentage Calculator</h1>
+        <form onsubmit="cal(event); return false;">
+            <div class="board">
+                <label for="bor"><b>Are you a board Student?</b></label>
+                <input type="text" name="bor" id="Board1">
+            </div>
+            <div class="additional_info" style="display: none;">
+                <div class="name">
+                    <label for="n">Name</label>
+                    <input type="text" name="n" id="n1">
+                </div>
+                <div class="class">
+                    <label for="c">Class</label>
+                    <input type="text" name="c" id="c1">
+                </div>
+                <div class="totalm">
+                    <label for="tm">Total Marks</label>
+                    <input type="number" name="tm" id="tm1">
+                </div>
+                <div class="obtm">
+                    <label for="om">Obtain Marks</label>
+                    <input type="number" name="om" id="om1">
+                </div>
+            </div>
+
+            <button id="btn" type="submit">Let's Calculate %</button>
+            <div id="result" style="display: none;"></div>
+            <script src="calculator.js">
+            </script>
+        </form>
+    </div>
+</body>
+</html>
